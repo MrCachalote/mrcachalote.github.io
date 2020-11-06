@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+			body{
+				background-color: black;
+				padding-top: 100px;
+			}
+	<!-- Neonbutton  -->
+		.neonbutton{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #031321; 
+			font-family: consolas;
+		}
+
+		.neonbutton a{
+			position: relative;
+			display: inline-block;
+			padding: 15px 30px;
+			color: #33E1D9;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-decoration: none;
+			font-size: 24px;
+			overflow: hidden;
+			transition: 0.2s;
+		}
+
+		.neonbutton a:hover{
+			color: #255784;
+			background: #33E1D9;
+			box-shadow: 0 0 10px #33E1D9, 0 0 40px #33E1D9, 0 0 80px #33E1D9;
+			transition-delay: 1s;
+		}
+
+		.neonbutton a span
+		{
+			position: absolute;
+			display: block;
+				}
+
+		.neonbutton a span:nth-child(1)
+		{
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, #33E1D9);
+		}
+
+		.neonbutton a:hover span:nth-child(1){
+			left: 100%;
+			transition: 1s;
+		}
+
+		.neonbutton a span:nth-child(3)
+		{
+			bottom: 0;
+			right: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(270deg, transparent, #33E1D9);
+		}
+
+		.neonbutton a:hover span:nth-child(3){
+			right: 100%;
+			transition: 1s;
+			transition-delay: 0.5s;
+		}
+
+		.neonbutton a span:nth-child(2)
+		{
+			top: -100%;
+			right: 0;
+			width: 2px;
+			height: 100%;
+			background: linear-gradient(180deg, transparent, #33E1D9);
+		}
+
+		.neonbutton a:hover span:nth-child(2){
+			top: 100%;
+			transition: 1s;
+			transition-delay: 0.25s;
+		}
+
+		.neonbutton a span:nth-child(4)
+		{
+			bottom: -100%;
+			left: 0;
+			width: 2px;
+			height: 50%;
+			background: linear-gradient(360deg, transparent, #33E1D9);
+		}
+
+		.neonbutton a:hover span:nth-child(4){
+			bottom: 100%;
+			transition: 1s;
+			transition-delay: 0.75s;
+		}
+
+		.card {
+        width: 300px;
+        height: 300px;
+        background: url("flamingo-logo.png") no-repeat;
+        background-size: 300px;
+        display: inline-block;
+    	}
+    
+    	.card:hover {
+        background: url("flamingo-logoH.png") no-repeat;
+        background-size: 300px;
+        transition-delay: 1s;
+		}
+		</style>
+	<title>Blackboard 2</title>
+	</head>
+<body>
+	<center> <div class="neonbutton"><a href= inboard1.html>
+		
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<div class = "card"> </div>
+		</a>
+	</div> </center>
+		
+	
+	
+</body>
+</html>
